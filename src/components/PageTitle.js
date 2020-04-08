@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
 
 const Title = styled.h1`
     font-size: 4.8rem;
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .7);
 
     ::after{
         content: '';

@@ -47,6 +47,7 @@ const ContactColumn = styled.div`
     
     color: rgba(0,0,0,.8);
 
+
     backdrop-filter: blur(15px) brightness(1.2);
 
     

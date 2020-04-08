@@ -12,9 +12,20 @@ const StyledDeliveriesContainer = styled.div`
 
     position: absolute;
     bottom: 7%;
-    right: 10%;
+    right: 17%;
 
     opacity: 80%;
+`
+
+const StyledLink = styled.a`
+    display: inline-block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding:0;
 `
 
 const StyledLogo = styled.img`
@@ -37,8 +48,8 @@ const StyledLogo = styled.img`
 const DeliveriesContainer = () => (
     <>
         <StyledDeliveriesContainer>
-            <StyledLogo src={uberLogo}></StyledLogo>
-            <StyledLogo src={pyszneLogo}></StyledLogo>
+            <StyledLink target="_blank" href='https://www.ubereats.com/pl/poznan/food-delivery/jaglana/nYqW-VJCRVmDWj7e7OBg3w'><StyledLogo src={uberLogo}></StyledLogo></StyledLink>
+            <StyledLink target="_blank" href='https://www.pyszne.pl/menu/jaglana-1'><StyledLogo src={pyszneLogo}></StyledLogo></StyledLink>
         </StyledDeliveriesContainer>
     </>
 )

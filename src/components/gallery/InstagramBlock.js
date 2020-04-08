@@ -37,7 +37,7 @@ const StyledImg = styled.img`
 const InstagramBlock = ({details}) => {
     return( details.link ?
         (<StyledBlock stylingDetails={details}>
-            <StyledLink href={details.link}>
+            <StyledLink target="_blank" href={details.link}>
                 <StyledImg src={details.img} />
             </StyledLink>
         </StyledBlock>)

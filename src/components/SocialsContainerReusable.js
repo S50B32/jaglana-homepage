@@ -45,15 +45,15 @@ const SocialsContainerReusable = ({type}) => {
     if (type==='black'){
         return(
             <>
-                <StyledLink href='https://www.facebook.com/JaglanaPoznan/'><StyledLogo src={fbLogoBlack}></StyledLogo></StyledLink> 
-                <StyledLink href='https://www.instagram.com/jaglana_poznan/'><StyledLogo src={instaLogoBlack}></StyledLogo></StyledLink>
+                <StyledLink target="_blank" href='https://www.facebook.com/JaglanaPoznan/'><StyledLogo src={fbLogoBlack}></StyledLogo></StyledLink> 
+                <StyledLink target="_blank" href='https://www.instagram.com/jaglana_poznan/'><StyledLogo src={instaLogoBlack}></StyledLogo></StyledLink>
             </>
         )
     }else if(type==='white'){
         return(
             <>
-                <StyledLink href='https://www.facebook.com/JaglanaPoznan/'><StyledLogo src={fbLogoWhite}></StyledLogo></StyledLink> 
-                <StyledLink href='https://www.instagram.com/jaglana_poznan/'><StyledLogo src={instaLogoWhite}></StyledLogo></StyledLink>
+                <StyledLink target="_blank" href='https://www.facebook.com/JaglanaPoznan/'><StyledLogo src={fbLogoWhite}></StyledLogo></StyledLink> 
+                <StyledLink target="_blank" href='https://www.instagram.com/jaglana_poznan/'><StyledLogo src={instaLogoWhite}></StyledLogo></StyledLink>
             </>
         )
     }else

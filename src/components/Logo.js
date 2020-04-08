@@ -34,7 +34,7 @@ const StyledLogo = styled.div`
 const Logo = () => (
     <>
         <StyledLogo>
-            <img src={jaglanaLogo}></img>
+            <img src={jaglanaLogo} onClick={() => scrollTo(`#about-us`)} />
         </StyledLogo>
     </>
 )

@@ -6,7 +6,7 @@ import DeliveriesContainer from './DeliveriesContainer'
 import DeliveriesContainerReusable from './DeliveriesContainerReusable'
 
 const StyledWrapper = styled.footer`
-    height: 22vh;
+    height: 21vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -15,11 +15,11 @@ const StyledWrapper = styled.footer`
     bottom: 0;
     left: 0;
     color: rgba(255, 255, 255, .5);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 `
 
 const FooterData = styled.div`
-    height: 80%;
+    height: 87%;
     width: 100%;
     background-color: rgba(239, 167, 57, 1);
 
@@ -122,11 +122,11 @@ const FooterData = styled.div`
 
 const CreditsBar = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    
-    height: 20%;
+    font-size: 1rem;
+    height: 13%;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
 `
@@ -182,8 +182,7 @@ const Footer = () => (
 
         </FooterData>
         <CreditsBar>
-            <span> © 2020. Wszelkie prawa zastrzeżone.</span>
-            <span> Projekt i realizacja: Przemysław Wielgosik</span>
+            <span> © 2020 Restauracja Jaglana. Wszelkie prawa zastrzeżone. Projekt i realizacja Przemysław Wielgosik.</span>
         </CreditsBar>
 
     </StyledWrapper>

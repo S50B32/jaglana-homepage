@@ -11,7 +11,7 @@ const StyledNavBar = styled.nav`
     align-items: center;
     background-color: rgba(0, 0, 0, .0);
     font-family: 'Cairo';
-    text-transform : uppercase;
+    text-transform : lowercase;
     font-size: 4rem;
     padding: 0 2em 1em;
     margin: 0;
@@ -100,7 +100,7 @@ const StyledLink = styled(Link)`
     border: none;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
    
 `
 const StyledLinkOut = styled.a`
@@ -111,7 +111,7 @@ const StyledLinkOut = styled.a`
     border: none;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
    
 `
 
@@ -123,7 +123,7 @@ const StyledLinkButton = styled.button`
     border: none;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 0;
     padding: 0;
 

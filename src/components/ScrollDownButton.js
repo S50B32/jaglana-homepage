@@ -15,7 +15,7 @@ const StyledScrollDownButton = styled.img`
     opacity: .7;
     z-index: 100;
 
-        bottom: 10%;
+        bottom: 5%;
         left: 50%;
         transform: translate(-50%, 50%);
 `

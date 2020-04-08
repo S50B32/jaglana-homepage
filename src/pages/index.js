@@ -28,6 +28,7 @@ import { CircleIndicator } from "../components/CircleIndicator"
 const GlobalStyle = createGlobalStyle`
   html{
     font-size: 10px;
+    box-sizing: border-box;
 
 
   }

@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 5.2rem;
+    font-size: 4.8rem;
     color: rgba(255, 255, 255, .9);
 
     ::after{
@@ -21,9 +21,9 @@ const Title = styled.h1`
         background-color: rgba(239, 167, 57, .7);
 
         position: absolute;
-        right: -3vw;
-        top: 50%;
-        height: 10vh;
+        right: -2vw;
+        top: 46%;
+        height: 6.5rem;
         margin-top: -5vh;
     }
 `

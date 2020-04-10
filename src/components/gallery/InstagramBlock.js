@@ -15,7 +15,11 @@ const StyledBlock = styled.div`
 
     background-image: url(${props => props.stylingDetails.link ? null : props.stylingDetails.img });
     background-size: cover;
-    background-color: ${props => props.stylingDetails.position === 'rightTop' ? 'rgba(239, 167, 57, .7)' : 'none'};
+    background-color: ${props => props.stylingDetails.position === 'rightTop' ? 'rgba(239, 167, 57, .7)' : 'none'};7
+
+    -webkit-box-shadow: 0px 0px 103px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 103px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 103px -9px rgba(0,0,0,0.75);
 `
 const StyledLink = styled.a`
     display: flex;

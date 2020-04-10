@@ -22,6 +22,8 @@ const StyledLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
     
     margin: 0;
     padding:0;

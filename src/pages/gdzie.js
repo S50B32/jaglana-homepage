@@ -40,7 +40,7 @@ const LocationDataContainer = styled.div`
 `
 
 const ContactColumn = styled.div`
-    width: 75vh;
+    width: 37vw;
     height: 75vh;
     background-color: rgba(226, 226, 226, .5);
     font-size: 3rem;
@@ -164,7 +164,7 @@ const ContactColumn = styled.div`
    
 `
 const MapColumn = styled.div`
-    width: 75vh;
+    width: 37vw;
     height: 75vh; 
 `
 
@@ -183,7 +183,7 @@ const Location = () => (
                                         <span itemProp='postalCode'>61-765</span> <span itemProp='addressLocality'>Poznań</span>
                                     </section></li>
                                     <li><span itemProp='telephone'>tel. 884 666 906</span></li>
-                                    <li><span itemProp='email'><a class='e-mail__link' href="mailto:webmaster@example.com">biuro@jaglana.pl</a></span></li>
+                                    <li><span itemProp='email'><a href="mailto:biuro@jaglana.pl">biuro@jaglana.pl</a></span></li>
                                 </section>
                                 <div class='contact__logo'>
                                     <LogoReusable type='black' itemProp='logo'></LogoReusable>

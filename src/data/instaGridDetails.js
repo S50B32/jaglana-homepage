@@ -29,7 +29,7 @@ const gridDetails = [
         columnEnd: 24,
         rowStart: 9,
         rowEnd: 12,
-        img: require('../../images/insta-logo-white.png'),
+        img: require('../images/insta-logo-white.png'),
         link: 'https://www.instagram.com/jaglana_poznan/'
     },
     {

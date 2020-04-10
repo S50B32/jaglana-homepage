@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 import styled from 'styled-components'
+
 import LogoReusable from './LogoReusable'
 import SocialsContainerReusable from './SocialsContainerReusable'
 import DeliveriesContainer from './DeliveriesContainer'
@@ -17,7 +20,6 @@ const StyledWrapper = styled.footer`
     color: rgba(255, 255, 255, .5);
     font-size: 1.2rem;
 `
-
 const FooterData = styled.div`
     height: 87%;
     width: 100%;
@@ -118,6 +120,23 @@ const FooterData = styled.div`
             
         }
     }
+
+    Link{
+        font-family: 'Cairo';
+        background: none;
+        font-size: 4rem;
+        opacity: .85;
+        border: none;
+        text-decoration: none;
+        color: white;
+        text-transform: lowercase;
+        margin: 0;
+        padding: 0;
+
+        :hover{
+            cursor: pointer;
+    }
+    }
 `
 
 const CreditsBar = styled.div`
@@ -149,9 +168,9 @@ const Footer = () => (
             <section class='footerSection footerSection__about'>
                 <ul>
                     <h4>RESTAURACJA</h4>
-                    <li>Menu</li>
-                    <li>O nas</li>
-                    <li>Kariera</li>
+                    <li><a target="_blank" href='http://larybar.pl/wp-content/uploads/2016/07/LaryBar_przykladowe_menu.pdf'>Menu</a></li>
+                    <li><button onClick={() => scrollTo('#about-us')}>O nas</button></li>
+                    <li><Link to='/kariera/'>Kariera</Link></li>
                     <li>FAQ</li>   
                 </ul>
             </section>
@@ -171,14 +190,9 @@ const Footer = () => (
             <section class='footerSection footerSection__deliveries'>
                 <h4>Zamów z dowozem</h4>
                     <span>
-                        <DeliveriesContainerReusable></DeliveriesContainerReusable>
+                        <DeliveriesContainerReusable type='white' />
                     </span>
             </section>
-
-
-
-
-
 
         </FooterData>
         <CreditsBar>

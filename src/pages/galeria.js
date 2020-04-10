@@ -16,6 +16,7 @@ const StyledWrapper = styled.div`
 
     position: relative;
 
+    backdrop-filter: blur(15px) brightness(1.2);
 
 `
 const Gallery = () => (

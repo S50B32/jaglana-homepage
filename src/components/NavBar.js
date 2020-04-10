@@ -1,15 +1,19 @@
-import React from 'react'
+import React,
+{useState} from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
-
+import DeliveriesContainerReusable from '../components/DeliveriesContainerReusable'
 
 const StyledNavBar = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .0);
+    background-color: rgba(0,
+        0,
+        0,
+        .0);
     font-family: 'Cairo';
     text-transform : lowercase;
     font-size: 4rem;
@@ -47,11 +51,12 @@ const StyledListItemOrder = styled.li`
 
     :hover{
         opacity: .6;
+        opacity: 1;
     }
-
     :active{
         opacity: .2;
-    }
+        opacity: 1;
+    } 
     
     span{
         display: block;
@@ -66,11 +71,15 @@ const StyledListItemOrder = styled.li`
         top: 50%;
         left: 50%;
   
-        transform: translate(-50%, 50%);
+        transform: translate(-50%,
+            50%);
     }
     span:nth-of-type(2)::before{
         content: '';
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255,
+            255,
+            255,
+            .5);
         display: block;
         height: 1px;
         width: 70rem;
@@ -81,7 +90,10 @@ const StyledListItemOrder = styled.li`
     }
     span:nth-of-type(2)::after{
         content: '';
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255,
+            255,
+            255,
+            .5);
         display: block;
         height: 1px;
         width: 70rem;
@@ -131,25 +143,63 @@ const StyledLinkButton = styled.button`
         cursor: pointer;
     }
 `
-//<StyledLink to={'/#onas'}>O nas</StyledLink>
-const NavBar = () => (
-    <>
+const NavBar = () => {
+    const [toggleOn, setToggleOn] = useState(false);
+
+    const showDeliveries = () =>  setToggleOn(true);
+    const hideDeliveries = () => setToggleOn(false);
+
+    return(
         <StyledNavBar>
             <StyledList>
                 <StyledListItem>
-                    <StyledLinkButton onClick={() => scrollTo('#about-us')}>O nas</StyledLinkButton>
+                    <StyledLinkButton
+                        onClick={() => scrollTo('#about-us')}>O nas</StyledLinkButton>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLinkButton onClick={() => scrollTo('#news')}>Aktualności</StyledLinkButton>
+                    <StyledLinkButton
+                        onClick={() => scrollTo('#news')}>Aktualności</StyledLinkButton>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLinkOut href='http://larybar.pl/wp-content/uploads/2016/07/LaryBar_przykladowe_menu.pdf'>Menu</StyledLinkOut>
+                    <StyledLinkOut
+                        onMouseEnter={hideDeliveries}
+                        target="_blank"
+                        href='http://larybar.pl/wp-content/uploads/2016/07/LaryBar_przykladowe_menu.pdf'>Menu</StyledLinkOut>
                 </StyledListItem>
-                <StyledListItemOrder>
-                    <StyledLink to={'/zamow/'}><span>Zamów</span><span>teraz</span></StyledLink>
+                <StyledListItemOrder
+                    >
+                        {toggleOn ?
+                            <div
+                                onMouseLeave={hideDeliveries}
+                                style={{padding: '0 10% 10%',
+                                        zIndex: 8,
+                                        opacity: 1,
+                                        backgroundColor: 'rgba(255,255,255,.5)',
+                                        //borderRadius: '2rem',
+                                        position: 'absolute',
+                                        left: '-20%',
+                                        top: '0%',
+                                        height: 160,
+                                        width: '120%',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                        }}>
+                                            <DeliveriesContainerReusable type='black' />
+                            </div>
+                        : null}
+                        <StyledLink
+                            onMouseEnter={showDeliveries}
+                            to={'/zamow/'}>
+                                <span>Zamów</span>
+                                <span>teraz</span>
+                        </StyledLink>
                 </StyledListItemOrder>
                 <StyledListItem>
-                    <StyledLinkButton onClick={() => scrollTo('#location')}>Kontakt</StyledLinkButton>
+                    <StyledLinkButton
+                        onMouseLeave={hideDeliveries}
+                        onClick={() => scrollTo('#location')}>Kontakt</StyledLinkButton>
                 </StyledListItem>
                 <StyledListItem>
                     <StyledLink to={'/kariera/'}>Kariera</StyledLink>
@@ -157,10 +207,9 @@ const NavBar = () => (
                 <StyledListItem>
                     <StyledLinkButton onClick={() => scrollTo('#gallery')}>Galeria</StyledLinkButton>
                 </StyledListItem>
-                
             </StyledList>
         </StyledNavBar>
-    </>
-)
+    )
+}
 
 export default NavBar;

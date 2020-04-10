@@ -15,14 +15,14 @@ const StyledWrapper = styled.div`
     h1{
         font-size: 3.4rem;
         font-weight: 400;
-        opacity: 80%;
+        opacity: .8;
     }
 `
 
 
 const AddressContainer = () => (
     <StyledWrapper>
-      <h1> Poznań — Kramarska 1/5 — 884 666 906 </h1>
+      <h1> Poznań — Kramarska 1/5 — <a href="tel:+48 884 666 906">884 666 906</a> </h1>
     </StyledWrapper>
 )
 

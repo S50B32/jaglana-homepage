@@ -1,29 +1,14 @@
 import React from "react"
 //import { Link } from "gatsby"
-import styled, {createGlobalStyle} from 'styled-components'
-import NavBar from '../components/NavBar'
-import SocialsContainer from '../components/SocialsContainer'
-import background from '../images/background.jpg'
-import MidSection from '../components/MidSection'
-import Logo from '../components/Logo'
-import DeliveriesContainer from '../components/DeliveriesContainer'
-import AddressContainer from '../components/AddressContainer'
+import {createGlobalStyle} from 'styled-components'
 
+import background from '../images/background.jpg'
 
 import Home from './home'
 import AboutUs from './o-nas'
 import Gallery from './galeria'
 import News from './aktualnosci'
-import Menu from './menu'
 import Location from './gdzie'
-import Footer from '../components/Footer'
-import ScrollDownButton from '../components/ScrollDownButton'
-
-import woodenBackground from '../images/wooden-background.png'
-import { CircleIndicator } from "../components/CircleIndicator"
-
-
-
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -66,13 +51,65 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
 
+  button{
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;   
+  }
+  button:hover{
+    cursor: pointer;
+  }
 
   @media (max-width: 1800px) {
     html{
     font-size: 9px;
     }
   }
+  @media (max-width: 1600px) {
+    html{
+    font-size: 8px;
+    }
+  }
+  @media (max-width: 1400px) {
+    html{
+    font-size: 7px;
+    }
+  }
+  @media (max-width: 1200px) {
+    html{
+    font-size: 6px;
+    }
+  }
+  @media (max-width: 1000px) {
+    html{
+    font-size: 5px;
+    }
+  }
+  @media (max-width: 800px) {
+    html{
+    font-size: 4px;
+    }
+  }
+  @media (max-width: 600px) {
+    html{
+    font-size: 3px;
+    }
+  }
+  @media (max-width: 400px) {
+    html{
+    font-size: 2px;
+    }
+  }
+  
 `
 
 

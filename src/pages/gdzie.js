@@ -2,8 +2,8 @@ import React from "react"
 import styled from 'styled-components'
 
 import Footer from "../components/Footer"
-import LogoReusable from "../components/LogoReusable"
-import SocialsContainerReusable from "../components/SocialsContainerReusable"
+import LogoReusable from "../components/Logo/LogoReusable"
+import SocialsContainerReusable from "../components/SocialsContainer/SocialsContainerReusable"
 
 const StyledWrapper = styled.div`
     height: 100vh;
@@ -16,17 +16,6 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    iframe{
-        width: 100%;
-        height: 100%;
-        border: none;
-
-          opacity: .85;
-            backdrop-filter: blur(10px) brightness(.5);     
-    }
-
-
 `
 
 const LocationDataContainer = styled.div`
@@ -36,20 +25,35 @@ const LocationDataContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
 
-    
+
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+
 `
 
 const ContactColumn = styled.div`
     width: 37vw;
     height: 75vh;
-    background-color: rgba(226, 226, 226, .5);
+    background-color: rgba(226, 226, 226, .6);
     font-size: 3rem;
     
     color: rgba(0,0,0,.8);
 
-
     backdrop-filter: blur(15px) brightness(1.2);
+    
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 50vh;
 
+    }
     
 
     li{
@@ -58,7 +62,6 @@ const ContactColumn = styled.div`
     
     .contact{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
@@ -68,7 +71,6 @@ const ContactColumn = styled.div`
         padding: 0;
 
         position: relative;
-
     }
     .contact::after{
         display: block;
@@ -91,9 +93,13 @@ const ContactColumn = styled.div`
         justify-content: center;
         
         font-size: 2.2rem;
-        padding: 4rem 7rem 4rem;
+        padding: 4rem 7rem 4rem 10%;
 
         box-sizing: border-box;
+
+        @media (max-width: 600px) {
+            font-size: calc(3 * 2.2rem);
+        }
     }
 
     .contact__logo{
@@ -148,6 +154,10 @@ const ContactColumn = styled.div`
         position: relative;
 
         font-size: 1.9rem;
+
+        @media (max-width: 600px) {
+            font-size: calc(2.5 * 1.9rem);
+        }
     }
 
     .openingHours__day{
@@ -165,7 +175,21 @@ const ContactColumn = styled.div`
 `
 const MapColumn = styled.div`
     width: 37vw;
-    height: 75vh; 
+    height: 75vh;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 50vh;
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        opacity: .85;
+        
+        backdrop-filter: blur(10px) brightness(.5);     
+    }
 `
 
 

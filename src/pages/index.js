@@ -1,8 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
 import {createGlobalStyle} from 'styled-components'
-
-import background from '../images/background.jpg'
 
 import Home from './home'
 import AboutUs from './o-nas'
@@ -10,17 +7,22 @@ import Gallery from './galeria'
 import News from './aktualnosci'
 import Location from './gdzie'
 
+import background from '../images/background.jpg'
+
+
 const GlobalStyle = createGlobalStyle`
+ /* to do: adjust all margins to border-box
+  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }*/
+
   html{
     font-size: 10px;
     box-sizing: border-box;
-
-
-  }
-  
-  .{
-    scroll-behavior: smooth;
-   
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   
   body {
@@ -63,10 +65,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: inherit;
     font-family: inherit;
     padding: 0;
-    margin: 0;   
-  }
-  button:hover{
-    cursor: pointer;
+    margin: 0;
+
+    :hover{
+      cursor: pointer;
+    }   
   }
 
   @media (max-width: 1800px) {

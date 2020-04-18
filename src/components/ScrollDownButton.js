@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 
 const StyledScrollDownButton = styled.img`
-    width: 145px;
+    width: 9vw;
     display: block;
     position: absolute;
 
@@ -18,11 +18,23 @@ const StyledScrollDownButton = styled.img`
         bottom: 5%;
         left: 50%;
         transform: translate(-50%, 50%);
+
+        :hover{
+        opacity: .6;
+        cursor: pointer;
+        }
+
+        :active{
+            opacity: .2;
+        } 
 `
 
 const ScrollDownButton = ({anchor}) => (
 
-    <StyledScrollDownButton src={scrollDownIcon} onClick={() => scrollTo(`${anchor}`)}></StyledScrollDownButton>
+    <StyledScrollDownButton
+        src={scrollDownIcon}
+        onClick={() => scrollTo(`${anchor}`)}
+    />
 
 )
 

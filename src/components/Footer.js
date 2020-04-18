@@ -3,22 +3,26 @@ import { Link } from 'gatsby'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import styled from 'styled-components'
 
-import LogoReusable from './LogoReusable'
-import SocialsContainerReusable from './SocialsContainerReusable'
-import DeliveriesContainer from './DeliveriesContainer'
-import DeliveriesContainerReusable from './DeliveriesContainerReusable'
+import LogoReusable from './Logo/LogoReusable'
+import SocialsContainerReusable from './SocialsContainer/SocialsContainerReusable'
+import DeliveriesContainerReusable from './DeliveriesContainer/DeliveriesContainerReusable'
 
 const StyledWrapper = styled.footer`
     height: 21vh;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
-
+    overflow-x: hidden;
+    
     position: relative;
     bottom: 0;
     left: 0;
     color: rgba(255, 255, 255, .5);
     font-size: 1.2rem;
+
+    @media (max-width: 600px) {
+            display: none;
+        }
 `
 const FooterData = styled.div`
     height: 87%;

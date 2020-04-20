@@ -4,7 +4,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import StyledNavBar from './StyledNavBar'
 import StyledLiOrderNow from './StyledLiOrderNow'
 import StyledLink from './StyledLink'
-import StyledDeliveriesMenu from './StyledDeliveriesMenu'
+import {StyledDeliveriesMenuOn, StyledDeliveriesMenuOff} from './StyledDeliveriesMenu'
 import DeliveriesContainerReusable from '../DeliveriesContainer/DeliveriesContainerReusable'
 
 const NavBar = () => {
@@ -39,20 +39,25 @@ const NavBar = () => {
                 <StyledLiOrderNow>
                         {toggleOn ?
                                 <>
-                                    <StyledDeliveriesMenu onMouseLeave={hideDeliveries}>
+                                    <StyledDeliveriesMenuOn onMouseLeave={hideDeliveries}>
                                         <DeliveriesContainerReusable type='black' />
-                                    </StyledDeliveriesMenu>
+                                    </StyledDeliveriesMenuOn>
                                     <StyledLink as='button' dimmed>
                                         <span>Zamów</span>
                                         <span>teraz</span>
                                     </StyledLink>
                                 </>
-                            : 
+                            :       
+                                <>
+                                    <StyledDeliveriesMenuOff>
+                                        <DeliveriesContainerReusable type='black' />
+                                    </StyledDeliveriesMenuOff>
                                     <StyledLink as='button'
                                         onMouseEnter={showDeliveries}>
                                         <span>Zamów</span>
                                         <span>teraz</span>
                                     </StyledLink>
+                                </>
                         }
                         
                 </StyledLiOrderNow>
@@ -64,7 +69,7 @@ const NavBar = () => {
                     </StyledLink>
                 </li>
                 <li>
-                    <StyledLink as='button'
+                    <StyledLink
                         to={'/kariera/'}>
                         Kariera
                     </StyledLink>

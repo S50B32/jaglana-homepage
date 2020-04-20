@@ -1,10 +1,17 @@
 import React from 'react'
-
 import scrollTo from 'gatsby-plugin-smoothscroll'
-
 import scrollDownIcon from '../images/expand_more.svg'
+import styled, {keyframes} from 'styled-components'
 
-import styled from 'styled-components'
+const pulse = keyframes`
+    from{
+        transform: translate(-50%, 35%);
+    }
+    
+    to {
+        transform: translate(-50%, 55%);
+    }
+`
 
 
 const StyledScrollDownButton = styled.img`
@@ -17,11 +24,14 @@ const StyledScrollDownButton = styled.img`
 
         bottom: 5%;
         left: 50%;
-        transform: translate(-50%, 50%);
+
+        transform: translate(-50%, 35%);
+
 
         :hover{
         opacity: .6;
         cursor: pointer;
+        animation: ${pulse} linear 1s infinite;
         }
 
         :active{

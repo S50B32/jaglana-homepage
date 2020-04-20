@@ -8,29 +8,20 @@ import {
 } from "framer-motion";
 import styled from 'styled-components';
 
-
-
-
 const StyledWrapper = styled.div`
-
     height: 200px;
     width: 200px;
     position: fixed;
     left: 5%;
     top: 50%;
-
     z-index: 100;
 `
 
-
-
-export const CircleIndicator = () => {
+const CircleIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
-
-
     
   useEffect(() => {yRange.onChange(v => setIsComplete(v >= 1))}, [yRange]);
 
@@ -70,3 +61,5 @@ export const CircleIndicator = () => {
     </StyledWrapper>
   );
 };
+
+export default CircleIndicator;

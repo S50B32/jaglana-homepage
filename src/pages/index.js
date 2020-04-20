@@ -9,6 +9,8 @@ import Location from './gdzie'
 
 import background from '../images/background.jpg'
 
+import ScrollBack from '../components/doWyjebania/ScrollBack'
+
 
 const GlobalStyle = createGlobalStyle`
  /* to do: adjust all margins to border-box
@@ -119,6 +121,7 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <> 
     <GlobalStyle />
+      <ScrollBack />
       <Home />
       <News />
       <AboutUs />

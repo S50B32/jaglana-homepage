@@ -20,6 +20,8 @@ const StyledWrapper = styled.footer`
     color: rgba(255, 255, 255, .5);
     font-size: 1.2rem;
 
+    z-index: 2;
+
     @media (max-width: 600px) {
             display: none;
         }

@@ -47,7 +47,6 @@ const Gallery = () => (
     
         <StyledWrapper id='gallery'>
             <PageTitle title='galeria' />
-            <LogoWrapper><LogoReusable type='white'/></LogoWrapper>
             <InstagramGrid />
             <ScrollDownButton anchor='#location' />
         </StyledWrapper>

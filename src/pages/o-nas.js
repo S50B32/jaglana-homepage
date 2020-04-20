@@ -77,7 +77,6 @@ const AboutUs = () => (
 
     <StyledWrapper id='about-us'>
         <PageTitle title='o nas' />
-        <LogoWrapper><LogoReusable type='white'/></LogoWrapper>
         <NewsContainer>
             <Avatar src={require('../images/dziewczyna.jpg')}></Avatar>
             <Post

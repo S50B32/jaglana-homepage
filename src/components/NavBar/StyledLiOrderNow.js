@@ -37,7 +37,7 @@ const StyledLiOrderNow = styled.li`
             span:nth-of-type(2)::after{
                 left: 120%;
                 top: 2.6rem;
-            } 
-`;
+            }
+`
 
 export default StyledLiOrderNow;

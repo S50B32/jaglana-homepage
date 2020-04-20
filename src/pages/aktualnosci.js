@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import PageTitle from '../components/PageTitle'
 import ScrollDownButton from "../components/ScrollDownButton"
 import Post from '../components/Post'
-import LogoReusable from '../components/Logo/LogoReusable'
 
 const StyledWrapper = styled.div`
     box-sizing: border-box;
@@ -83,7 +82,6 @@ const LogoWrapper = styled.div`
 const News = () => (
     <StyledWrapper id='news'>
         <PageTitle title='aktualności' />
-        <LogoWrapper><LogoReusable type='white'/></LogoWrapper>
         <NewsContainer>
             <Post
                 title='Post 1'

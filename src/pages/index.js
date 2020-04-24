@@ -1,6 +1,7 @@
 import React from "react"
 import {createGlobalStyle} from 'styled-components'
 
+import MetaData from '../components/MetaData'
 import Home from './home'
 import AboutUs from './o-nas'
 import Gallery from './galeria'
@@ -121,6 +122,7 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <> 
     <GlobalStyle />
+      <MetaData />
       <ScrollBack />
       <Home />
       <News />

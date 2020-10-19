@@ -259,7 +259,10 @@ const Location = () => (
           </article>
         </ContactColumn>
         <MapColumn>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9735.40845723797!2d16.9331704!3d52.4093564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf9b7ea50eced02b!2sJaglana!5e0!3m2!1spl!2spl!4v1585427075755!5m2!1spl!2spl"></iframe>
+          <iframe
+            title="Google Map showing the restaurant's location"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9735.40845723797!2d16.9331704!3d52.4093564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf9b7ea50eced02b!2sJaglana!5e0!3m2!1spl!2spl!4v1585427075755!5m2!1spl!2spl"
+          ></iframe>
         </MapColumn>
       </LocationDataContainer>
       <Footer></Footer>

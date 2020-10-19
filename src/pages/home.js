@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
 const Home = () => {
   return (
     <StyledWrapper id="home">
-      <SEO title="Strona główna" />
+      <SEO title="Powitanie" />
       <NavBar />
       <Logo />
       <SocialsContainer />

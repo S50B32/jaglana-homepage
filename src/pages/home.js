@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import SEO from "../components/SEO"
 import NavBar from "../components/NavBar/NavBar"
 import Logo from "../components/Logo/Logo"
 import SocialsContainer from "../components/SocialsContainer/SocialsContainer"
@@ -30,6 +30,7 @@ const StyledWrapper = styled.div`
 const Home = () => {
   return (
     <StyledWrapper id="home">
+      <SEO title="Strona główna" />
       <NavBar />
       <Logo />
       <SocialsContainer />

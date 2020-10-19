@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled, { createGlobalStyle } from "styled-components"
-
+import SEO from "../components/SEO"
 import PageTitle from "../components/PageTitle"
 import Post from "../components/Post"
 
@@ -103,6 +103,7 @@ const NewsContainer = styled.div`
 const Careers = () => (
   <>
     <GlobalStyle />
+    <SEO title="Kariera" />
     <StyledWrapper id="careers">
       <PageTitle title="kariera" />
       <NewsContainer>

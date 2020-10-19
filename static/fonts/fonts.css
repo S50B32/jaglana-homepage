@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Cairo";
+  src: url("cairo.eot") format("eot");
+  src: url("cairo.woff2") format("woff2"), url("cairo.woff") format("woff"),
+    url("cairo.ttf") format("truetype"), url("cairo.svg") format("svg"),
+    url("cairo.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

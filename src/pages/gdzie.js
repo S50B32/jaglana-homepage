@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import SEO from "../components/SEO"
 import Footer from "../components/Footer"
 import LogoReusable from "../components/Logo/LogoReusable"
 import SocialsContainerReusable from "../components/SocialsContainer/SocialsContainerReusable"
@@ -184,6 +184,7 @@ const MapColumn = styled.div`
 const Location = () => (
   <>
     <StyledWrapper id="location">
+      <SEO title="Lokalizacja" />
       <LocationDataContainer>
         <ContactColumn itemScope itemType="https://schema.org/Restaurant">
           <article className="contact">

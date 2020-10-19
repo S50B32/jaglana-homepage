@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import SEO from "../components/SEO"
 import InstagramGrid from "../components/InstagramGallery/InstagramGrid"
 import ScrollDownButton from "../components/ScrollDownButton"
 import PageTitle from "../components/PageTitle"
@@ -44,6 +44,7 @@ const LogoWrapper = styled.div`
 
 const Gallery = () => (
   <StyledWrapper id="gallery">
+    <SEO title="Galeria" />
     <PageTitle title="galeria" />
     <LogoWrapper>
       <LogoReusable type="white" />

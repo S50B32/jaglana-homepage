@@ -1,6 +1,5 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
-
 import Home from "./home"
 import AboutUs from "./o-nas"
 import Gallery from "./galeria"

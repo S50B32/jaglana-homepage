@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components"
 
 import PageTitle from "../components/PageTitle"
-import Post from '../components/Post'
+import Post from "../components/Post"
 
-import background from '../images/background.jpg'
-
+import background from "../images/background.jpg"
 
 const GlobalStyle = createGlobalStyle`
   html{
@@ -14,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   
-  .{
+  *{
     scroll-behavior: smooth;
    
   }
@@ -54,69 +53,67 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 const StyledLink = styled(Link)`
-    background-color: rgba(226, 226, 226, .5);
-    font-size: 2rem;
-    box-sizing: border-box;
-    
-    background-color: rgba(239, 167, 57, .7);
-    background-color: rgba(226, 226, 226, .5);
-    width: calc(100%/2 - 1rem);
+  background-color: rgba(226, 226, 226, 0.5);
+  font-size: 2rem;
+  box-sizing: border-box;
 
-    backdrop-filter: blur(15px) brightness(1.2);
+  background-color: rgba(239, 167, 57, 0.7);
+  background-color: rgba(226, 226, 226, 0.5);
+  width: calc(100% / 2 - 1rem);
 
+  backdrop-filter: blur(15px) brightness(1.2);
 
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 
-    padding: 0 1.5rem 1.5rem;
-    margin: 0.5rem;
+  padding: 0 1.5rem 1.5rem;
+  margin: 0.5rem;
 `
 const StyledWrapper = styled.div`
-    box-sizing: border-box;
-    
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  position: relative;
 `
 
 const NewsContainer = styled.div`
-    box-sizing: border-box;
-    padding: .5rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
 
-    background-color: rgba(0, 0, 0, .3);
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
 
-    width: 90%;
-    height: 80%;
+  width: 90%;
+  height: 80%;
 
-    position: relative;
-    top: 10%;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-    justify-content: flex-start;
-   
-    overflow: hidden;
+  justify-content: flex-start;
 
-    `
+  overflow: hidden;
+`
 const Careers = () => (
-    <>
+  <>
     <GlobalStyle />
-    <StyledWrapper id='careers'>
-        <PageTitle title='kariera' />
-        <NewsContainer>
-            <Post
-            title='Dołącz do nas'
-            content='Informacja o stanowiskach, na które rekrutujecie. Na dole formularz kontaktowy.'
-            />
+    <StyledWrapper id="careers">
+      <PageTitle title="kariera" />
+      <NewsContainer>
+        <Post
+          title="Dołącz do nas"
+          content="Informacja o stanowiskach, na które rekrutujecie. Na dole formularz kontaktowy."
+        />
         <StyledLink to="/">Wróć do strony głównej</StyledLink>
-        </NewsContainer>
+      </NewsContainer>
     </StyledWrapper>
-    </>
+  </>
 )
 
 export default Careers

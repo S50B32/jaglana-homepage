@@ -2,7 +2,7 @@ import React from "react"
 
 const NotFoundPage = () => (
   <>
-    <p>Nie ma takiej strony. Wypierdalaj.</p>
+    <p>Nie ma takiej strony.</p>
   </>
 )
 

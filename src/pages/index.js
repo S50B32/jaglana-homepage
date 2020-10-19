@@ -1,14 +1,13 @@
 import React from "react"
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
-import Home from './home'
-import AboutUs from './o-nas'
-import Gallery from './galeria'
-import News from './aktualnosci'
-import Location from './gdzie'
+import Home from "./home"
+import AboutUs from "./o-nas"
+import Gallery from "./galeria"
+import News from "./aktualnosci"
+import Location from "./gdzie"
 
-import background from '../images/background.jpg'
-
+import background from "../images/background.jpg"
 
 const GlobalStyle = createGlobalStyle`
  /* to do: adjust all margins to border-box
@@ -115,16 +114,14 @@ const GlobalStyle = createGlobalStyle`
   
 `
 
-
 const IndexPage = () => (
-  <> 
+  <>
     <GlobalStyle />
-      <Home />
-      <News />
-      <AboutUs />
-      <Gallery />
-      <Location />
-      
+    <Home />
+    <News />
+    <AboutUs />
+    <Gallery />
+    <Location />
   </>
 )
 

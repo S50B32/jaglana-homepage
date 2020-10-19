@@ -78,15 +78,13 @@ const AboutUs = () => (
     <NewsContainer>
       <Avatar src={require("../images/girl.jpg")}></Avatar>
       <Post
-        title="Dziewczyna Michaua, wiek nieznany"
-        content="Prawdę mówiąc, to ja ogarniam cały ten burdel.
-                Lubię Michaua i jego wyrzeźbione ciało.
-                Założyłam restaurację, bo nie chciałam żeby jadł tyle paprykarzu."
+        title="Ona"
+        content="Suspendisse potenti. Nulla interdum velit eu velit venenatis aliquam sit amet et nisl. Praesent id tempus lorem, pellentesque bibendum eros. Nunc et consequat dui. Aenean finibus mi erat, id cursus quam cursus et. Duis rhoncus mi et eros faucibus euismod. "
       />
-      <Avatar src={require("../images/boy.jpg")}></Avatar>
+      <Avatar src={require("../images/boy.jpg")}></Avatar>.
       <Post
-        title="Michau, lat 28"
-        content="Lubię ćwiczyć i jeść dobre, zdrowe jedzenie. Nie lubię liczyć kalorii, dlatego tak naprawdę to ja założyłem tę restaurację, żeby moi pracownicy robili to za mnie."
+        title="On"
+        content="Suspendisse potenti. Nulla interdum velit eu velit venenatis aliquam sit amet et nisl. Praesent id tempus lorem, pellentesque bibendum eros. Nunc et consequat dui. Aenean finibus mi erat, id cursus quam cursus et. "
       />
     </NewsContainer>
     <ScrollDownButton anchor="#gallery" />

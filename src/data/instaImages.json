@@ -1,0 +1,75 @@
+[
+  {
+    "src": "../images/insta/1.jpg",
+    "position": "center",
+    "columnStart": 8,
+    "columnEnd": 20,
+    "rowStart": 8,
+    "rowEnd": 20
+  },
+  {
+    "src": "../images/insta/2.jpg",
+    "position": "topLeft",
+    "columnStart": 9,
+    "columnEnd": 13,
+    "rowStart": 3,
+    "rowEnd": 7
+  },
+  {
+    "src": "../images/insta/3.jpg",
+    "position": "topRight",
+    "columnStart": 14,
+    "columnEnd": 20,
+    "rowStart": 1,
+    "rowEnd": 7
+  },
+  {
+    "src": "../images/insta/4.png",
+    "position": "rightTop",
+    "columnStart": 21,
+    "columnEnd": 24,
+    "rowStart": 9,
+    "rowEnd": 12,
+    "link": "https://www.instagram.com/jaglana_poznan/"
+  },
+  {
+    "src": "../images/insta/5.jpg",
+    "position": "rightBottom",
+    "columnStart": 21,
+    "columnEnd": 28,
+    "rowStart": 13,
+    "rowEnd": 20
+  },
+  {
+    "src": "../images/insta/6.jpg",
+    "position": "bottomRight",
+    "columnStart": 21,
+    "columnEnd": 26,
+    "rowStart": 21,
+    "rowEnd": 26
+  },
+  {
+    "src": "../images/insta/7.jpg",
+    "position": "bottomLeft",
+    "columnStart": 17,
+    "columnEnd": 20,
+    "rowStart": 21,
+    "rowEnd": 24
+  },
+  {
+    "src": "../images/insta/8.jpg",
+    "position": "leftBottom",
+    "columnStart": 4,
+    "columnEnd": 7,
+    "rowStart": 17,
+    "rowEnd": 20
+  },
+  {
+    "src": "../images/insta/9.jpg",
+    "position": "leftTop",
+    "columnStart": 1,
+    "columnEnd": 7,
+    "rowStart": 10,
+    "rowEnd": 16
+  }
+]

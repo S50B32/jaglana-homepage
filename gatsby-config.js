@@ -4,7 +4,6 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
-  pathPrefix: "/jaglana-homepage",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -14,20 +13,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-<<<<<<< HEAD
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
-=======
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Cairo"],
-        },
->>>>>>> master
       },
     },
     `gatsby-transformer-sharp`,

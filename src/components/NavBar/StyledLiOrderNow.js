@@ -8,7 +8,6 @@ const StyledLiOrderNow = styled.li`
   position: relative;
   bottom: 2rem;
 
-<<<<<<< HEAD
   span {
     display: block;
     font-size: 5.2rem;
@@ -39,17 +38,6 @@ const StyledLiOrderNow = styled.li`
     left: 120%;
     top: 2.6rem;
   }
-=======
-        }
-            span:nth-of-type(2)::before{        
-                right: 120%;
-                top: 2.6rem;   
-            }
-            span:nth-of-type(2)::after{
-                left: 120%;
-                top: 2.6rem;
-            }
->>>>>>> master
 `
 
 export default StyledLiOrderNow

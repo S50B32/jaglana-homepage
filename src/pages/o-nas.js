@@ -66,7 +66,6 @@ const Avatar = styled.img`
   width: 15rem;
   border-radius: 50%;
 
-<<<<<<< HEAD
   opacity: 0.9;
 `
 
@@ -90,26 +89,6 @@ const AboutUs = () => (
     </NewsContainer>
     <ScrollDownButton anchor="#gallery" />
   </StyledWrapper>
-=======
-    <StyledWrapper id='about-us'>
-        <PageTitle title='o nas' />
-        <NewsContainer>
-            <Avatar src={require('../images/dziewczyna.jpg')}></Avatar>
-            <Post
-                title='Dziewczyna Michaua, wiek nieznany'
-                content='Prawdę mówiąc, to ja ogarniam cały ten burdel.
-                Lubię Michaua i jego wyrzeźbione ciało.
-                Założyłam restaurację, bo nie chciałam żeby jadł tyle paprykarzu.'
-            />
-            <Avatar src={require('../images/michau.jpg')}></Avatar>
-            <Post
-                title='Michau, lat 28'
-                content='Lubię ćwiczyć i jeść dobre, zdrowe jedzenie. Nie lubię liczyć kalorii, dlatego tak naprawdę to ja założyłem tę restaurację, żeby moi pracownicy robili to za mnie.'
-            />
-        </NewsContainer>
-        <ScrollDownButton anchor='#gallery' />
-    </StyledWrapper>
->>>>>>> master
 )
 
 export default AboutUs

@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import styled from "styled-components"
-
 import LogoReusable from "./Logo/LogoReusable"
 import SocialsContainerReusable from "./SocialsContainer/SocialsContainerReusable"
 import DeliveriesContainerReusable from "./DeliveriesContainer/DeliveriesContainerReusable"
@@ -13,13 +12,11 @@ const StyledWrapper = styled.footer`
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
   position: relative;
   bottom: 0;
   left: 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
-
   @media (max-width: 600px) {
     display: none;
   }
@@ -28,26 +25,19 @@ const FooterData = styled.div`
   height: 87%;
   width: 100%;
   background-color: rgba(239, 167, 57, 1);
-
   display: flex;
   justify-content: left;
   align-items: center;
-
   position: relative;
-
   .footerSection {
     display: flex;
     box-sizing: border-box;
-
     position: relative;
     height: 100%;
     width: 10%;
-
     padding: 1.5rem 0 0;
     margin: 0;
-
     justify-content: center;
-
     ul {
       padding: 0;
       margin: 0;
@@ -58,7 +48,6 @@ const FooterData = styled.div`
       margin: 0;
     }
   }
-
   .footerSection__logo {
     padding: 0;
     align-items: center;
@@ -78,15 +67,12 @@ const FooterData = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: center;
-
     margin-left: 22.5%;
-
     span {
       display: flex;
       flex-direction: column;
       justify-content: left;
       align-items: center;
-
       a {
         width: 15%;
         opacity: 0.6;
@@ -99,13 +85,11 @@ const FooterData = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: center;
-
     span {
       display: flex;
       flex-direction: column;
       justify-content: left;
       align-items: center;
-
       a {
         width: 50%;
         opacity: 0.6;
@@ -113,7 +97,6 @@ const FooterData = styled.div`
       }
     }
   }
-
   link {
     font-family: "Cairo";
     background: none;
@@ -125,7 +108,6 @@ const FooterData = styled.div`
     text-transform: lowercase;
     margin: 0;
     padding: 0;
-
     :hover {
       cursor: pointer;
     }

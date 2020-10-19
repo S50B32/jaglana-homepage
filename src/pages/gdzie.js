@@ -190,8 +190,8 @@ const Location = () => (
     <StyledWrapper id="location">
       <LocationDataContainer>
         <ContactColumn itemScope itemType="https://schema.org/Restaurant">
-          <article class="contact">
-            <section class="contact__details">
+          <article className="contact">
+            <section className="contact__details">
               <span itemProp="name">Jaglana</span>
               <li>
                 <section
@@ -213,47 +213,47 @@ const Location = () => (
                 </span>
               </li>
             </section>
-            <div class="contact__logo">
+            <div className="contact__logo">
               <LogoReusable type="black" itemProp="logo"></LogoReusable>
             </div>
           </article>
 
           <article
-            class="openingHours"
+            className="openingHours"
             itemProp="openingHours"
             content="Mo-Su 10:00-15:00"
           >
-            <div class="openingHours__socialMedia">
+            <div className="openingHours__socialMedia">
               <SocialsContainerReusable type="black"></SocialsContainerReusable>
             </div>
-            <ul class="openingHours__list">
+            <ul className="openingHours__list">
               <li>
-                <span class="openingHours__day">poniedziałek</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">poniedziałek</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">wtorek</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">wtorek</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">środa</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">środa</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">czwartek</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">czwartek</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">piątek</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">piątek</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">sobota</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">sobota</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
               <li>
-                <span class="openingHours__day">niedziela</span>{" "}
-                <span class="openingHours__time">10:00–15:00</span>
+                <span className="openingHours__day">niedziela</span>{" "}
+                <span className="openingHours__time">10:00–15:00</span>
               </li>
             </ul>
           </article>

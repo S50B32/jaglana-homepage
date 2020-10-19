@@ -38,7 +38,7 @@ const DeliveriesContainerReusable = ({ type }) => {
       <>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.ubereats.com/pl/poznan/food-delivery/jaglana/nYqW-VJCRVmDWj7e7OBg3w"
         >
           <StyledLogo type={type} src={uberLogoBlack} />
@@ -53,14 +53,14 @@ const DeliveriesContainerReusable = ({ type }) => {
       <>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.ubereats.com/pl/poznan/food-delivery/jaglana/nYqW-VJCRVmDWj7e7OBg3w"
         >
           <StyledLogo type={type} src={uberLogo} />
         </StyledLink>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.pyszne.pl/menu/jaglana-1"
         >
           <StyledLogo type={type} src={pyszneLogo} />

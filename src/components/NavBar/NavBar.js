@@ -31,7 +31,7 @@ const NavBar = () => {
             as="a"
             onMouseEnter={hideDeliveries}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="http://larybar.pl/wp-content/uploads/2016/07/LaryBar_przykladowe_menu.pdf"
           >
             Menu

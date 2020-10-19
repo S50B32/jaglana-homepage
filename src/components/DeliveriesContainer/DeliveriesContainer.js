@@ -50,14 +50,14 @@ const DeliveriesContainer = () => (
     <StyledDeliveriesContainer>
       <StyledLink
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         href="https://www.ubereats.com/pl/poznan/food-delivery/jaglana/nYqW-VJCRVmDWj7e7OBg3w"
       >
         <StyledLogo src={uberLogo}></StyledLogo>
       </StyledLink>
       <StyledLink
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         href="https://www.pyszne.pl/menu/jaglana-1"
       >
         <StyledLogo src={pyszneLogo}></StyledLogo>

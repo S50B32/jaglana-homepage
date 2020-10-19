@@ -51,14 +51,14 @@ const SocialsContainerReusable = ({ type }) => {
       <>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.facebook.com/JaglanaPoznan/"
         >
           <StyledLogo src={fbLogoBlack}></StyledLogo>
         </StyledLink>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.instagram.com/jaglana_poznan/"
         >
           <StyledLogo src={instaLogoBlack}></StyledLogo>
@@ -70,14 +70,14 @@ const SocialsContainerReusable = ({ type }) => {
       <>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.facebook.com/JaglanaPoznan/"
         >
           <StyledLogo src={fbLogoWhite}></StyledLogo>
         </StyledLink>
         <StyledLink
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href="https://www.instagram.com/jaglana_poznan/"
         >
           <StyledLogo src={instaLogoWhite}></StyledLogo>

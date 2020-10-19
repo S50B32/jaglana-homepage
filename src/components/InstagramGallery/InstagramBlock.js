@@ -44,7 +44,11 @@ const InstagramBlock = ({ details }) => {
   return details.link ? (
     <StyledBlock stylingDetails={details}>
       <StylesImgContainer>
-        <StyledLink target="_blank" rel="noreferrer" href={details.link}>
+        <StyledLink
+          target="_blank"
+          rel="noopener noreferrer"
+          href={details.link}
+        >
           <Img fluid={details.src.childImageSharp.fluid} />
         </StyledLink>
       </StylesImgContainer>

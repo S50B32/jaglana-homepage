@@ -128,29 +128,29 @@ const CreditsBar = styled.div`
 const Footer = () => (
   <StyledWrapper>
     <FooterData>
-      <section class="footerSection footerSection__logo">
+      <section className="footerSection footerSection__logo">
         <LogoReusable type="white"></LogoReusable>
       </section>
-      <section class="footerSection footerSection__contact">
+      <section className="footerSection footerSection__contact">
         <ul>
           <h4>KONTAKT</h4>
           <li>tel. 884 666 906</li>
           <li>ul. Kramarska 1/5</li>
           <li>61-765 Poznań</li>
           <li>
-            <a class="e-mail__link" href="mailto:biuro@jaglana.pl">
+            <a className="e-mail__link" href="mailto:biuro@jaglana.pl">
               biuro@jaglana.pl
             </a>
           </li>
         </ul>
       </section>
-      <section class="footerSection footerSection__about">
+      <section className="footerSection footerSection__about">
         <ul>
           <h4>RESTAURACJA</h4>
           <li>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="http://larybar.pl/wp-content/uploads/2016/07/LaryBar_przykladowe_menu.pdf"
             >
               Menu
@@ -165,20 +165,20 @@ const Footer = () => (
           <li>FAQ</li>
         </ul>
       </section>
-      <section class="footerSection footerSection__info">
+      <section className="footerSection footerSection__info">
         <ul>
           <h4>INFORMACJE</h4>
           <li>Informacja prawna</li>
           <li>Polityka prywatności</li>
         </ul>
       </section>
-      <section class="footerSection footerSection__media">
+      <section className="footerSection footerSection__media">
         <h4>Śledź nasze profile</h4>
         <span>
           <SocialsContainerReusable type="white"></SocialsContainerReusable>
         </span>
       </section>
-      <section class="footerSection footerSection__deliveries">
+      <section className="footerSection footerSection__deliveries">
         <h4>Zamów z dowozem</h4>
         <span>
           <DeliveriesContainerReusable type="white" />

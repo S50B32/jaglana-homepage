@@ -43,6 +43,7 @@ const LogoWrapper = styled.div`
 `
 
 const Gallery = () => (
+<<<<<<< HEAD
   <StyledWrapper id="gallery">
     <PageTitle title="galeria" />
     <LogoWrapper>
@@ -51,6 +52,14 @@ const Gallery = () => (
     <InstagramGrid />
     <ScrollDownButton anchor="#location" />
   </StyledWrapper>
+=======
+    
+        <StyledWrapper id='gallery'>
+            <PageTitle title='galeria' />
+            <InstagramGrid />
+            <ScrollDownButton anchor='#location' />
+        </StyledWrapper>
+>>>>>>> master
 )
 
 export default Gallery

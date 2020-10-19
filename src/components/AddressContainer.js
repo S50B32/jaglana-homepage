@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import premises from '../data/premises'
+
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -20,6 +22,7 @@ const StyledWrapper = styled.div`
 `
 
 const AddressContainer = () => (
+<<<<<<< HEAD
   <StyledWrapper>
     <h1>
       {" "}
@@ -28,6 +31,11 @@ const AddressContainer = () => (
       </a>{" "}
     </h1>
   </StyledWrapper>
+=======
+    <StyledWrapper>
+      <h1> {premises.contact.address.city} — {premises.contact.address.street} {premises.contact.address.streetNo} — <a href="tel:+48 884 666 906">{premises.contact.phone}</a> </h1>
+    </StyledWrapper>
+>>>>>>> master
 )
 
 export default AddressContainer

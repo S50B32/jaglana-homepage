@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import React from "react"
 import styled from "styled-components"
+=======
+import React from 'react';
+import styled from 'styled-components';
+>>>>>>> master
 
-import Footer from "../components/Footer"
-import LogoReusable from "../components/Logo/LogoReusable"
-import SocialsContainerReusable from "../components/SocialsContainer/SocialsContainerReusable"
+import Footer from '../components/Gdzie/Footer';
+import ContactColumn from '../components/Gdzie/ContactColumn';
 
 const StyledWrapper = styled.div`
   height: 100vh;
@@ -41,6 +45,7 @@ const ContactColumn = styled.div`
   background-color: rgba(226, 226, 226, 0.6);
   font-size: 3rem;
 
+<<<<<<< HEAD
   color: rgba(0, 0, 0, 0.8);
 
   backdrop-filter: blur(15px) brightness(1.2);
@@ -162,6 +167,19 @@ const ContactColumn = styled.div`
     left: 55%;
   }
 `
+=======
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+`
+
+
+>>>>>>> master
 const MapColumn = styled.div`
   width: 37vw;
   height: 75vh;
@@ -182,6 +200,7 @@ const MapColumn = styled.div`
 `
 
 const Location = () => (
+<<<<<<< HEAD
   <>
     <StyledWrapper id="location">
       <LocationDataContainer>
@@ -264,6 +283,19 @@ const Location = () => (
       <Footer></Footer>
     </StyledWrapper>
   </>
+=======
+    <>
+        <StyledWrapper id='location'>
+            <LocationDataContainer>
+                <ContactColumn />
+                <MapColumn>
+                    <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9735.40845723797!2d16.9331704!3d52.4093564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf9b7ea50eced02b!2sJaglana!5e0!3m2!1spl!2spl!4v1585427075755!5m2!1spl!2spl'></iframe>
+                </MapColumn>
+            </LocationDataContainer>
+            <Footer />
+        </StyledWrapper>
+    </>
+>>>>>>> master
 )
 
 export default Location

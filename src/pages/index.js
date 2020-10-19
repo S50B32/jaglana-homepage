@@ -1,6 +1,7 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 
+<<<<<<< HEAD
 import Home from "./home"
 import AboutUs from "./o-nas"
 import Gallery from "./galeria"
@@ -8,6 +9,19 @@ import News from "./aktualnosci"
 import Location from "./gdzie"
 
 import background from "../images/background.jpg"
+=======
+import MetaData from '../components/MetaData'
+import Home from './home'
+import AboutUs from './o-nas'
+import Gallery from './galeria'
+import News from './aktualnosci'
+import Location from './gdzie'
+
+import background from '../images/background.jpg'
+
+import ScrollBack from '../components/doWyjebania/ScrollBack'
+
+>>>>>>> master
 
 const GlobalStyle = createGlobalStyle`
  /* to do: adjust all margins to border-box
@@ -117,11 +131,22 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <>
     <GlobalStyle />
+<<<<<<< HEAD
     <Home />
     <News />
     <AboutUs />
     <Gallery />
     <Location />
+=======
+      <MetaData />
+      <ScrollBack />
+      <Home />
+      <News />
+      <AboutUs />
+      <Gallery />
+      <Location />
+      
+>>>>>>> master
   </>
 )
 

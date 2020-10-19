@@ -47,7 +47,7 @@ const InstagramGrid = () => {
   return (
     <StyledWrapper>
       {data.allInstaImagesJson.nodes.map(block => (
-        <InstagramBlock key={block.img} details={block} />
+        <InstagramBlock key={block.id} details={block} />
       ))}
     </StyledWrapper>
   )

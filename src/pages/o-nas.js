@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import SEO from "../components/SEO"
 import ScrollDownButton from "../components/ScrollDownButton"
 import PageTitle from "../components/PageTitle"
 import Post from "../components/Post"
@@ -71,7 +70,6 @@ const Avatar = styled.img`
 
 const AboutUs = () => (
   <StyledWrapper id="about-us">
-    <SEO title="O nas" />
     <PageTitle title="o nas" />
     <LogoWrapper>
       <LogoReusable type="white" />

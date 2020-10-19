@@ -5,7 +5,6 @@ import AboutUs from "./o-nas"
 import Gallery from "./galeria"
 import News from "./aktualnosci"
 import Location from "./gdzie"
-import SEO from "../components/SEO"
 import background from "../images/background.jpg"
 
 const GlobalStyle = createGlobalStyle`
@@ -116,7 +115,6 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <>
     <GlobalStyle />
-    <SEO title="Strona główna" />
     <Home />
     <News />
     <AboutUs />

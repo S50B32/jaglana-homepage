@@ -65,9 +65,7 @@ const NavBar = () => {
           </StyledLink>
         </li>
         <li>
-          <StyledLink as="button" to={"/kariera/"}>
-            Kariera
-          </StyledLink>
+          <StyledLink as="button">Kariera</StyledLink>
         </li>
         <li>
           <StyledLink as="button" onClick={() => scrollTo("#gallery")}>

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import SEO from "../components/SEO"
 import PageTitle from "../components/PageTitle"
 import ScrollDownButton from "../components/ScrollDownButton"
 import Post from "../components/Post"
@@ -78,7 +77,6 @@ const LogoWrapper = styled.div`
 
 const News = () => (
   <StyledWrapper id="news">
-    <SEO title="Aktualności" />
     <PageTitle title="aktualności" />
     <LogoWrapper>
       <LogoReusable type="white" />

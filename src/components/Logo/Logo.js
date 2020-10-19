@@ -21,12 +21,8 @@ const StyledLogo = styled.div`
 `
 
 const Logo = () => (
-  <StyledLogo>
-    <img
-      alt="logo restauracji Jaglana"
-      src={jaglanaLogo}
-      onClick={() => scrollTo(`#about-us`)}
-    />
+  <StyledLogo onClick={() => scrollTo(`#about-us`)}>
+    <img alt="logo restauracji Jaglana" src={jaglanaLogo} />
   </StyledLogo>
 )
 
